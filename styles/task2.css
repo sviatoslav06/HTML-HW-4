@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 90%;
+    margin: auto;
+}
+
+h1 {
+    font-weight: 800;
+}
+
+ul {
+    width: 20%;
+    font-size: 20px;
+    list-style-type: none;
+    padding: 0;
+}
+
+li::before {
+    content: url(../images/unchecked.png);
+    margin-right: 30px;
+    margin-left: 40px;
+}
+
+li {
+    padding: 10px;
+}
+
+li::after {
+    content: '❌';
+    margin-left: 20px;
+}
+
+.darkBlue {
+    background-color: DeepSkyBlue;
+}
+
+.blue {
+    background-color: LightSkyBlue;
+}
+
+.completed {
+    background-color: lightgrey;
+    text-decoration: line-through;
+}
+
+.completed::before {
+    content: url(../images/checked.png);
+}

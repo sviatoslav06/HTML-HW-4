@@ -1,0 +1,31 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    color: white;
+}
+
+ol {
+    background-color: LightPink;
+    width: 40%;
+    padding: 20px;
+    list-style-type: none;
+    counter-reset: count;
+}
+
+li {
+    background-color: LightCoral;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+li::before {
+    color: white;
+    margin-right: 15px;
+    content: counter(count);
+    counter-increment: count;
+}
+
+span {
+    background-color: IndianRed;
+    padding: 10px;
+}
